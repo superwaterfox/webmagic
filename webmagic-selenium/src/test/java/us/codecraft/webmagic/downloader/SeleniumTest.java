@@ -14,15 +14,15 @@ import java.util.Map;
 
 /**
  * @author code4crafter@gmail.com <br>
- * Date: 13-7-26 <br>
- * Time: 下午12:27 <br>
+ *         Date: 13-7-26 <br>
+ *         Time: 下午12:27 <br>
  */
 public class SeleniumTest {
 
     @Ignore("need chrome driver")
     @Test
     public void testSelenium() {
-        System.getProperties().setProperty("webdriver.chrome.driver", "/Users/yihua/Downloads/chromedriver");
+        System.getProperties().setProperty("webdriver.chrome.driver", "/Users/ch/Documents/waterfox/waterfox-manager-pom/waterfox-manager-controller/src/main/resources/script/chromedriver");
         Map<String, Object> contentSettings = new HashMap<String, Object>();
         contentSettings.put("images", 2);
 
