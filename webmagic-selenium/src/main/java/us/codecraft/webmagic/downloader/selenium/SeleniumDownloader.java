@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.Site;
@@ -108,7 +107,8 @@ public class SeleniumDownloader implements Downloader, Closeable {
 		String content = webElement.getAttribute("outerHTML");
 		Page page = new Page();
 		page.setRawText(content);
-		page.setHtml(new Html(UrlUtils.fixAllRelativeHrefs(content,
+        System.out.println(content);
+        page.setHtml(new Html(UrlUtils.fixAllRelativeHrefs(content,
 				request.getUrl())));
 		page.setUrl(new PlainText(request.getUrl()));
 		page.setRequest(request);

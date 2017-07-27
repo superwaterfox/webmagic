@@ -45,7 +45,7 @@ class WebDriverPool {
 	private WebDriver mDriver = null;
 	private boolean mAutoQuitDriver = true;
 
-    private static final String CONFIG_FILE = "/Users/ch/Documents/waterfox/webmagic-selenium/config.ini";
+    private static final String CONFIG_FILE = "/Users/ch/Documents/waterfox/waterfox-manager-pom/waterfox-manager-controller/src/main/resources/script/config.ini";
     private static final String DRIVER_FIREFOX = "firefox";
 	private static final String DRIVER_CHROME = "chrome";
 	private static final String DRIVER_PHANTOMJS = "phantomjs";
